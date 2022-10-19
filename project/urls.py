@@ -10,4 +10,4 @@ urlpatterns = [
     path('account/', include('register.urls')),
     path('hitcount/', include('hitcount.urls', namespace='hitcount')),
 
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
